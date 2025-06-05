@@ -1,0 +1,31 @@
+public class Problem1{
+    public static void main(String[] args) {
+        Student s1= new Student("22701A02876","jaanu","eee",3,'b');
+        Student s2=new Student("22705a0285","radha","eee",3,'b');
+         s1.display();
+         s2.display();
+    }
+ }
+ class Student{
+    String name;
+    String roll;
+    String branch;
+    int year;
+    char section;
+    Student(String roll,String name,String branch,int year,char section){
+        this.name=name;
+        this.roll=roll;
+        this.branch=branch;
+        this.year=year;
+        this.section=section;
+}
+    void display(){
+        System.out.println("..............");
+        System.out.println("Student name is:"+name);
+        System.out.println("Student roll num is:"+roll);
+        System.out.println("Student branch is:"+branch);
+        System.out.println("Student year is:"+year);
+        System.out.println("Student section is:"+section);
+        System.out.println("................");
+    }
+}
